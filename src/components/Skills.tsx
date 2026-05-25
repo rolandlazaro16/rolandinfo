@@ -34,13 +34,13 @@ export default function Skills() {
           {skills.map((skill) => (
             <article
               key={skill.name}
-              className="group rounded-2xl border border-white/10 bg-stone-950/60 p-7 transition hover:border-brand-500/40 hover:bg-stone-900/80"
+              className="group rounded-2xl border border-black/10 bg-white p-7 transition hover:border-brand-500/50 hover:shadow-md"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400 transition group-hover:bg-brand-500/25">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-100 text-brand-600 transition group-hover:bg-brand-600 group-hover:text-white">
                 {iconMap[skill.icon]}
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-white">{skill.name}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-stone-400">
+              <h3 className="mt-5 text-lg font-semibold text-black">{skill.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-black/60">
                 {skill.description}
               </p>
             </article>

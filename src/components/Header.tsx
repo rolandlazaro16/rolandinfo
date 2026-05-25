@@ -23,16 +23,16 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-stone-200 bg-white/90 shadow-lg backdrop-blur-md"
+          ? "border-b border-black/10 bg-white/90 shadow-lg backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-sm font-bold text-white shadow-lg shadow-brand-500/30">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-lg shadow-brand-600/25">
             {initials}
           </span>
-          <span className="hidden font-semibold text-stone-900 sm:block">
+          <span className="hidden font-semibold text-black sm:block">
             Immaculatha Muro
           </span>
         </a>
@@ -42,7 +42,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-stone-600 transition hover:text-brand-600"
+              className="text-sm font-medium text-black/60 transition hover:text-brand-600"
             >
               {link.label}
             </a>
@@ -53,7 +53,7 @@ export default function Header() {
           href={profile.whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-500 md:inline-flex"
+          className="hidden rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 md:inline-flex"
         >
           Get in touch
         </a>
@@ -64,20 +64,20 @@ export default function Header() {
           className="inline-flex flex-col gap-1.5 p-2 lg:hidden"
           onClick={() => setMenuOpen((o) => !o)}
         >
-          <span className={`h-0.5 w-6 bg-stone-900 transition ${menuOpen ? "translate-y-2 rotate-45" : ""}`} />
-          <span className={`h-0.5 w-6 bg-stone-900 transition ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`h-0.5 w-6 bg-stone-900 transition ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+          <span className={`h-0.5 w-6 bg-black transition ${menuOpen ? "translate-y-2 rotate-45" : ""}`} />
+          <span className={`h-0.5 w-6 bg-black transition ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`h-0.5 w-6 bg-black transition ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
         </button>
       </div>
 
       {menuOpen && (
-        <nav className="border-t border-stone-200 bg-white/95 px-6 py-4 lg:hidden">
+        <nav className="border-t border-black/10 bg-white/95 px-6 py-4 lg:hidden">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-stone-600 hover:text-brand-600"
+                className="text-black/60 hover:text-brand-600"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

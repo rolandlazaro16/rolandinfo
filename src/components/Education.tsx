@@ -3,7 +3,7 @@ import { education } from "@/data/portfolio";
 
 export default function Education() {
   return (
-    <section id="education" className="border-y border-stone-200 bg-stone-50 py-24">
+    <section id="education" className="border-y border-black/10 bg-black/[0.03] py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Education"
@@ -12,7 +12,7 @@ export default function Education() {
         />
 
         <ol className="relative mt-14 space-y-8">
-          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-brand-500 via-brand-600/50 to-transparent md:left-1/2 md:block md:-translate-x-px" />
+          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-brand-600 via-brand-500/50 to-transparent md:left-1/2 md:block md:-translate-x-px" />
 
           {education.map((item, index) => (
             <li
@@ -28,28 +28,28 @@ export default function Education() {
                 }`}
               >
                 <article
-                  className={`rounded-2xl border p-6 transition hover:border-brand-500/40 ${
+                  className={`rounded-2xl border p-6 transition hover:border-brand-500/50 ${
                     "highlight" in item && item.highlight
-                      ? "border-brand-500/50 bg-brand-500/10 shadow-lg shadow-brand-500/10"
-                      : "border-white/10 bg-stone-950/80"
+                      ? "border-brand-500 bg-brand-50 shadow-lg shadow-brand-500/10"
+                      : "border-black/10 bg-white"
                   }`}
                 >
-                  <span className="inline-block rounded-full bg-brand-500/20 px-3 py-1 text-xs font-semibold text-brand-300">
+                  <span className="inline-block rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700">
                     {item.level}
                   </span>
-                  <h3 className="mt-3 text-lg font-semibold text-white">
+                  <h3 className="mt-3 text-lg font-semibold text-black">
                     {item.institution}
                   </h3>
                   {"field" in item && (
-                    <p className="mt-1 text-sm font-medium text-accent">
+                    <p className="mt-1 text-sm font-medium text-brand-600">
                       {item.field}
                     </p>
                   )}
-                  <p className="mt-2 text-sm text-stone-400">{item.description}</p>
+                  <p className="mt-2 text-sm text-black/60">{item.description}</p>
                 </article>
               </div>
               <div
-                className="absolute left-4 top-6 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-brand-500 bg-white md:left-1/2 md:block"
+                className="absolute left-4 top-6 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-brand-600 bg-white md:left-1/2 md:block"
                 aria-hidden
               />
             </li>

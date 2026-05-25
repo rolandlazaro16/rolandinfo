@@ -9,13 +9,13 @@ export default function SectionHeading({
 }) {
   return (
     <div className="max-w-2xl">
-      <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">
+      <p className="text-sm font-semibold uppercase tracking-widest text-brand-600">
         {eyebrow}
       </p>
-      <h2 className="mt-2 font-display text-3xl font-bold text-stone-900 sm:text-4xl">
+      <h2 className="mt-2 font-display text-3xl font-bold text-black sm:text-4xl">
         {title}
       </h2>
-      <p className="mt-3 text-stone-600">{subtitle}</p>
+      <p className="mt-3 text-black/60">{subtitle}</p>
     </div>
   );
 }

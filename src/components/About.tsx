@@ -12,15 +12,15 @@ export default function About() {
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="space-y-5 leading-relaxed text-stone-600">
+          <div className="space-y-5 leading-relaxed text-black/60">
             <p>
-              I am <strong className="text-stone-900">{profile.name}</strong>, originally
-              from <strong className="text-stone-900">{profile.location}</strong>. I hold a
+              I am <strong className="text-black">{profile.name}</strong>, originally
+              from <strong className="text-black">{profile.location}</strong>. I hold a
               Bachelor&apos;s in Agribusiness &amp; Accounting from Sokoine University of
               Agriculture (SUA) and a Master&apos;s from Harvard University.
             </p>
             <p>
-              As a <strong className="text-stone-900">university lecturer in economics</strong>{" "}
+              As a <strong className="text-black">university lecturer in economics</strong>{" "}
               and related fields, I combine rigorous academic training with practical
               experience in government organizations and NGOs.
             </p>
@@ -31,8 +31,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-stone-900 to-stone-950 p-8">
-            <h3 className="text-lg font-semibold text-white">Quick Facts</h3>
+          <div className="rounded-2xl border border-black/10 bg-black p-8 text-white">
+            <h3 className="text-lg font-semibold">Quick Facts</h3>
             <dl className="mt-6 space-y-4">
               {[
                 { term: "Full Name", detail: profile.name },
@@ -44,10 +44,10 @@ export default function About() {
               ].map((item) => (
                 <div
                   key={item.term}
-                  className="flex flex-col gap-0.5 border-b border-white/5 pb-4 last:border-0 last:pb-0 sm:flex-row sm:justify-between"
+                  className="flex flex-col gap-0.5 border-b border-white/10 pb-4 last:border-0 last:pb-0 sm:flex-row sm:justify-between"
                 >
-                  <dt className="text-sm text-stone-500">{item.term}</dt>
-                  <dd className="text-sm font-medium text-stone-200 sm:max-w-[60%] sm:text-right">
+                  <dt className="text-sm text-white/50">{item.term}</dt>
+                  <dd className="text-sm font-medium text-white sm:max-w-[60%] sm:text-right">
                     {item.detail}
                   </dd>
                 </div>
