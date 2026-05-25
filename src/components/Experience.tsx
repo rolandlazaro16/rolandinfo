@@ -3,7 +3,7 @@ import { experience, profile } from "@/data/portfolio";
 
 export default function Experience() {
   return (
-    <section id="experience" className="border-y border-white/5 bg-stone-900/30 py-24">
+    <section id="experience" className="border-y border-stone-200 bg-stone-50 py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Professional Experience"

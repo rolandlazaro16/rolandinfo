@@ -10,7 +10,7 @@ export default function Hero() {
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
+              "linear-gradient(rgba(0,0,0,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.06) 1px, transparent 1px)",
             backgroundSize: "64px 64px",
           }}
         />
@@ -23,19 +23,19 @@ export default function Hero() {
             Born in {profile.location}
           </p>
 
-          <h1 className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="font-display text-4xl font-bold leading-tight text-stone-900 sm:text-5xl lg:text-6xl">
             Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-brand-300 via-brand-400 to-accent bg-clip-text text-transparent">
               {profile.name}
             </span>
           </h1>
 
-          <p className="mt-2 text-xl font-medium text-stone-300 sm:text-2xl">
+          <p className="mt-2 text-xl font-medium text-stone-700 sm:text-2xl">
             {profile.title}
           </p>
           <p className="mt-1 text-lg text-stone-500">{profile.subtitle}</p>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-400">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-600">
             {profile.tagline}
           </p>
 
@@ -51,7 +51,7 @@ export default function Hero() {
             </a>
             <a
               href="#experience"
-              className="inline-flex rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-brand-400/50 hover:bg-white/5"
+              className="inline-flex rounded-full border border-stone-300 px-7 py-3.5 text-sm font-semibold text-stone-800 transition hover:border-brand-400/50 hover:bg-stone-100"
             >
               View experience
             </a>
@@ -66,10 +66,10 @@ export default function Hero() {
           ].map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm"
+              className="rounded-2xl border border-stone-200 bg-stone-50 p-5"
             >
-              <p className="text-sm text-stone-400">{stat.label}</p>
-              <p className="mt-1 text-lg font-semibold text-white">{stat.value}</p>
+              <p className="text-sm text-stone-500">{stat.label}</p>
+              <p className="mt-1 text-lg font-semibold text-stone-900">{stat.value}</p>
             </div>
           ))}
         </div>

@@ -3,7 +3,7 @@ import { education } from "@/data/portfolio";
 
 export default function Education() {
   return (
-    <section id="education" className="border-y border-white/5 bg-stone-900/30 py-24">
+    <section id="education" className="border-y border-stone-200 bg-stone-50 py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Education"
@@ -49,7 +49,7 @@ export default function Education() {
                 </article>
               </div>
               <div
-                className="absolute left-4 top-6 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-brand-500 bg-stone-950 md:left-1/2 md:block"
+                className="absolute left-4 top-6 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-brand-500 bg-white md:left-1/2 md:block"
                 aria-hidden
               />
             </li>

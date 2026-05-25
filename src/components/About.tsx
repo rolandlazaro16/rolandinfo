@@ -12,15 +12,15 @@ export default function About() {
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="space-y-5 leading-relaxed text-stone-400">
+          <div className="space-y-5 leading-relaxed text-stone-600">
             <p>
-              I am <strong className="text-white">{profile.name}</strong>, originally
-              from <strong className="text-white">{profile.location}</strong>. I hold a
+              I am <strong className="text-stone-900">{profile.name}</strong>, originally
+              from <strong className="text-stone-900">{profile.location}</strong>. I hold a
               Bachelor&apos;s in Agribusiness &amp; Accounting from Sokoine University of
               Agriculture (SUA) and a Master&apos;s from Harvard University.
             </p>
             <p>
-              As a <strong className="text-white">university lecturer in economics</strong>{" "}
+              As a <strong className="text-stone-900">university lecturer in economics</strong>{" "}
               and related fields, I combine rigorous academic training with practical
               experience in government organizations and NGOs.
             </p>

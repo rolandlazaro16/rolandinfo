@@ -12,10 +12,10 @@ export default function SectionHeading({
       <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">
         {eyebrow}
       </p>
-      <h2 className="mt-2 font-display text-3xl font-bold text-white sm:text-4xl">
+      <h2 className="mt-2 font-display text-3xl font-bold text-stone-900 sm:text-4xl">
         {title}
       </h2>
-      <p className="mt-3 text-stone-400">{subtitle}</p>
+      <p className="mt-3 text-stone-600">{subtitle}</p>
     </div>
   );
 }
